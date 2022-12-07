@@ -1,38 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url('./background.jpg') no-repeat;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    margin-top: 80px;
+    text-align: center;
+    min-height: 400px;
+    width: 450px;
+    padding: 20px;
+    /* blur effect */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: #1C6758;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+    font-family: 'Montserrat', sans-serif;
+    padding: 13px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+    padding: 0;
+    border: none;
+    height: 40px;
+}
+
+span {
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+}
+
+.add-btn {
+    width: 40px;
+    margin-left: -43px;
+    opacity: .6;
+}
+
+.del-btn {
+    width: 35px;
+    margin: 0 5px;
+    opacity: .7;
+}
+
+.add-btn:hover, .del-btn:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.check-circle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0 10px 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 20px;
+    color: #4E3D53;
+    width: 100%;
+    margin: 5px 0;
+    /* background-image: url('./undone-sm-64.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px; */
+}
+
+.checked {
+    /* background-image: url('./done-sm-64.png'); */
+    text-decoration: line-through 3px #4E9F3D;
+}
+
+.del {
+    margin-left: auto;
 }
