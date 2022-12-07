@@ -1,15 +1,7 @@
-// ключ АРІ на pexel
-// 563492ad6f91700001000001a26335d0c8c04ee685199d18aa01767b
-
-// endpoint: 
-// https://api.pexels.com/v1/
-
 import { Component } from "react";
 import add from './add.png';
 import bin from './bin2.png';
 import Done from "./Done";
-// import undone from './undone-sm-64.png';
-// import done from './done-sm-64.png';
 import Undone from "./Undone";
 
 
