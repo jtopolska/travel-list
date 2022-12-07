@@ -21,7 +21,6 @@ body {
     min-height: 400px;
     width: 450px;
     padding: 20px;
-    /* blur effect */
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -93,14 +92,9 @@ ul {
     color: #4E3D53;
     width: 100%;
     margin: 5px 0;
-    /* background-image: url('./undone-sm-64.png');
-    background-repeat: no-repeat;
-    background-position-y: center;
-    background-position-x: 10px; */
 }
 
 .checked {
-    /* background-image: url('./done-sm-64.png'); */
     text-decoration: line-through 3px #4E9F3D;
 }
 
